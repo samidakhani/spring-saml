@@ -1,0 +1,26 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:utils="http://java.sun.com/jsf/composite/utils">
+<h:head>
+</h:head>
+<h:body style="width:100%">
+
+	<f:metadata>
+		<f:event type="preRenderView" listener="#{loginBean.doLigin}" />
+	</f:metadata>
+	
+	<h:form>
+		<p:outputLabel value="Username: "/>
+		<h:outputText value="#{loginBean.username}" />
+		
+		<br />
+		
+		<h:link value="Logout" outcome="/saml/logout/"/>
+	</h:form>
+
+
+</h:body>
+</html>
