@@ -1,0 +1,3 @@
+Creating a keystore and key
+>keytool -genkeypair -alias some-alias -keypass changeit -keystore samlKeystore.jks
+			Eg:keytool -genkeypair -alias springsaml -keypass springsaml -keystore samlKeystore.jks

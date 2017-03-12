@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="urn_saml_samidakhani_losangeles" entityID="urn:saml:samidakhani:losangeles">
+	<md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+		<md:KeyDescriptor use="signing">
+			<ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+				<ds:X509Data>
+					<ds:X509Certificate>MIIDSTCCAwegAwIBAgIEeZEuszALBgcqhkjOOAQDBQAwdjELMAkGA1UEBhMCVVMxEzARBgNVBAgT
+CkNhbGlmb3JuaWExFDASBgNVBAcTC0xvcyBBbmdlbGVzMRAwDgYDVQQKEwdEYWtoYW5pMRMwEQYD
+VQQLEwpEYWtoYW5pT3JnMRUwEwYDVQQDEwxTYW1pIERha2hhbmkwHhcNMTcwMzEyMDA1MDI0WhcN
+MTcwNjEwMDA1MDI0WjB2MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEUMBIGA1UE
+BxMLTG9zIEFuZ2VsZXMxEDAOBgNVBAoTB0Rha2hhbmkxEzARBgNVBAsTCkRha2hhbmlPcmcxFTAT
+BgNVBAMTDFNhbWkgRGFraGFuaTCCAbgwggEsBgcqhkjOOAQBMIIBHwKBgQD9f1OBHXUSKVLfSpwu
+7OTn9hG3UjzvRADDHj+AtlEmaUVdQCJR+1k9jVj6v8X1ujD2y5tVbNeBO4AdNG/yZmC3a5lQpaSf
+n+gEexAiwk+7qdf+t8Yb+DtX58aophUPBPuD9tPFHsMCNVQTWhaRMvZ1864rYdcq7/IiAxmd0UgB
+xwIVAJdgUI8VIwvMspK5gqLrhAvwWBz1AoGBAPfhoIXWmz3ey7yrXDa4V7l5lK+7+jrqgvlXTAs9
+B4JnUVlXjrrUWU/mcQcQgYC0SRZxI+hMKBYTt88JMozIpuE8FnqLVHyNKOCjrh4rs6Z1kW6jfwv6
+ITVi8ftiegEkO8yk8b6oUZCJqIPf4VrlnwaSi2ZegHtVJWQBTDv+z0kqA4GFAAKBgQDpYKpsZ9S9
+H+DkkHJpNVkTkCg7QIh4Lemif7t9Vx7gVdSha3KVXINrLQEf6hTufZTEOW7ZyFPyqZ/cQK1M95Az
+I+5G6/Qs6Lv8oGiGn1mY/4bcqAaIbn8APRq0lJHFiR0BMelpHS0BxgTbvdFqnNvdVTZZUC1wgqZq
+hZ/6XX8FH6MhMB8wHQYDVR0OBBYEFMD+s6KMJMb7Jo/K0iAw6I/gmetNMAsGByqGSM44BAMFAAMv
+ADAsAhQLugopk52fn0AIiVVTR1EcZd9VuAIUQ4Tj8TcyuROl3F3PwzR9JnLBgMY=</ds:X509Certificate>
+				</ds:X509Data>
+			</ds:KeyInfo>
+		</md:KeyDescriptor>
+		<md:KeyDescriptor use="encryption">
+			<ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+				<ds:X509Data>
+					<ds:X509Certificate>MIIDSTCCAwegAwIBAgIEeZEuszALBgcqhkjOOAQDBQAwdjELMAkGA1UEBhMCVVMxEzARBgNVBAgT
+CkNhbGlmb3JuaWExFDASBgNVBAcTC0xvcyBBbmdlbGVzMRAwDgYDVQQKEwdEYWtoYW5pMRMwEQYD
+VQQLEwpEYWtoYW5pT3JnMRUwEwYDVQQDEwxTYW1pIERha2hhbmkwHhcNMTcwMzEyMDA1MDI0WhcN
+MTcwNjEwMDA1MDI0WjB2MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEUMBIGA1UE
+BxMLTG9zIEFuZ2VsZXMxEDAOBgNVBAoTB0Rha2hhbmkxEzARBgNVBAsTCkRha2hhbmlPcmcxFTAT
+BgNVBAMTDFNhbWkgRGFraGFuaTCCAbgwggEsBgcqhkjOOAQBMIIBHwKBgQD9f1OBHXUSKVLfSpwu
+7OTn9hG3UjzvRADDHj+AtlEmaUVdQCJR+1k9jVj6v8X1ujD2y5tVbNeBO4AdNG/yZmC3a5lQpaSf
+n+gEexAiwk+7qdf+t8Yb+DtX58aophUPBPuD9tPFHsMCNVQTWhaRMvZ1864rYdcq7/IiAxmd0UgB
+xwIVAJdgUI8VIwvMspK5gqLrhAvwWBz1AoGBAPfhoIXWmz3ey7yrXDa4V7l5lK+7+jrqgvlXTAs9
+B4JnUVlXjrrUWU/mcQcQgYC0SRZxI+hMKBYTt88JMozIpuE8FnqLVHyNKOCjrh4rs6Z1kW6jfwv6
+ITVi8ftiegEkO8yk8b6oUZCJqIPf4VrlnwaSi2ZegHtVJWQBTDv+z0kqA4GFAAKBgQDpYKpsZ9S9
+H+DkkHJpNVkTkCg7QIh4Lemif7t9Vx7gVdSha3KVXINrLQEf6hTufZTEOW7ZyFPyqZ/cQK1M95Az
+I+5G6/Qs6Lv8oGiGn1mY/4bcqAaIbn8APRq0lJHFiR0BMelpHS0BxgTbvdFqnNvdVTZZUC1wgqZq
+hZ/6XX8FH6MhMB8wHQYDVR0OBBYEFMD+s6KMJMb7Jo/K0iAw6I/gmetNMAsGByqGSM44BAMFAAMv
+ADAsAhQLugopk52fn0AIiVVTR1EcZd9VuAIUQ4Tj8TcyuROl3F3PwzR9JnLBgMY=</ds:X509Certificate>
+				</ds:X509Data>
+			</ds:KeyInfo>
+		</md:KeyDescriptor>
+		<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:8080/spring-saml/saml/SingleLogout/alias/urn:saml:samidakhani:losangeles"/>
+		<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://localhost:8080/spring-saml/saml/SingleLogout/alias/urn:saml:samidakhani:losangeles"/>
+		<md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat>
+		<md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+		<md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+		<md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
+		<md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName</md:NameIDFormat>
+		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:8080/spring-saml/saml/SSO/alias/urn:saml:samidakhani:losangeles" index="0" isDefault="true"/>
+	</md:SPSSODescriptor>
+</md:EntityDescriptor>
