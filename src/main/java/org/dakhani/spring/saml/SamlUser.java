@@ -8,69 +8,49 @@ import java.util.List;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-public class SamlUser implements UserDetails,Serializable {
-	
+public class SamlUser implements UserDetails, Serializable {
+
 	private static final long serialVersionUID = 7786059275980655433L;
 
 	private List<GrantedAuthority> authorities = new ArrayList<>();
-	
+
 	private String emailAddress;
-	
+
 	private String firstname;
-	
+
 	private String lastname;
-	
+
 	private String username;
-	
-	public SamlUser(String username){
+
+	public SamlUser(final String username) {
 		this.username = username;
 	}
-	
+
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
-		return authorities;
+		return this.authorities;
 	}
-	
+
 	public String getEmailAddress() {
-		return emailAddress;
+		return this.emailAddress;
 	}
-	
+
 	public String getFirstname() {
-		return firstname;
+		return this.firstname;
 	}
-	
+
 	public String getLastname() {
-		return lastname;
+		return this.lastname;
 	}
-	
+
 	@Override
 	public String getPassword() {
 		return null;
 	}
-	
+
 	@Override
 	public String getUsername() {
-		return null;
-	}
-
-	public void setAuthorities(List<GrantedAuthority> authorities) {
-		this.authorities = authorities;
-	}
-	
-	public void setEmailAddress(String emailAddress) {
-		this.emailAddress = emailAddress;
-	}
-	
-	public void setFirstname(String firstname) {
-		this.firstname = firstname;
-	}
-
-	public void setLastname(String lastname) {
-		this.lastname = lastname;
-	}
-
-	public void setUsername(String username) {
-		this.username = username;
+		return this.username;
 	}
 
 	@Override
@@ -93,9 +73,30 @@ public class SamlUser implements UserDetails,Serializable {
 		return true;
 	}
 
+	public void setAuthorities(final List<GrantedAuthority> authorities) {
+		this.authorities = authorities;
+	}
+
+	public void setEmailAddress(final String emailAddress) {
+		this.emailAddress = emailAddress;
+	}
+
+	public void setFirstname(final String firstname) {
+		this.firstname = firstname;
+	}
+
+	public void setLastname(final String lastname) {
+		this.lastname = lastname;
+	}
+
+	public void setUsername(final String username) {
+		this.username = username;
+	}
+
 	@Override
 	public String toString() {
-		return "SamlUser [firstname=" + firstname + ", lastname=" + lastname + "]";
+		return "SamlUser [firstname=" + this.firstname + ", lastname="
+				+ this.lastname + "]";
 	}
 
 }

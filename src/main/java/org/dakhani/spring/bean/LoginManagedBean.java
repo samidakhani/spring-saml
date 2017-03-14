@@ -1,17 +1,7 @@
 package org.dakhani.spring.bean;
 
-import java.io.IOException;
-import java.util.Map;
-
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.RequestScoped;
 import javax.faces.bean.ViewScoped;
-import javax.faces.context.ExternalContext;
-import javax.faces.context.FacesContext;
-import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
 
 import org.dakhani.spring.saml.SamlUser;
 import org.springframework.security.core.Authentication;
@@ -24,28 +14,29 @@ import org.springframework.security.core.context.SecurityContextHolder;
 @ManagedBean(name = "loginBean")
 @ViewScoped
 public class LoginManagedBean {
-	
-	private String username;
 
+	private String username;
 
 	/**
 	 * Log-in user get user credentials.
 	 */
-	public void doLigin(){
-		
+	public void doLigin() {
+
 		Authentication authentication = SecurityContextHolder.getContext()
 				.getAuthentication();
-		SamlUser user= (SamlUser) authentication.getDetails();
+		SamlUser user = (SamlUser) authentication.getDetails();
 		this.username = user.getUsername();
-		
+
+		// alternate way of fetching username
+		// this.username = (String) authentication.getPrincipal();
+
 	}
-	
+
 	public String getUsername() {
-		return username;
+		return this.username;
 	}
 
-
-	public void setUsername(String username) {
+	public void setUsername(final String username) {
 		this.username = username;
 	}
 
