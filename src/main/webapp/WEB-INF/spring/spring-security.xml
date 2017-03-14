@@ -20,7 +20,7 @@
 					<beans:constructor-arg>
 						<beans:bean class="org.opensaml.saml2.metadata.provider.FilesystemMetadataProvider" init-method="initialize">
 							<beans:constructor-arg>
-								<beans:value type="java.io.File">file:/Users/Sami/Desktop/SAMI/properties/saml/idpMetadata.xml</beans:value>
+								<beans:value type="java.io.File">file:/properties/saml/idpMetadata.xml</beans:value>
 							</beans:constructor-arg>
 							<beans:property name="parserPool" ref="parserPool" />
 						</beans:bean>
@@ -35,7 +35,7 @@
 					<beans:constructor-arg>
 						<beans:bean class="org.opensaml.saml2.metadata.provider.FilesystemMetadataProvider" init-method="initialize">
 							<beans:constructor-arg>
-								<beans:value type="java.io.File">file:/Users/Sami/Desktop/SAMI/properties/saml/spMetadata.xml</beans:value>
+								<beans:value type="java.io.File">file:/properties/saml/spMetadata.xml</beans:value>
 							</beans:constructor-arg>
 							<beans:property name="parserPool" ref="parserPool" />
 						</beans:bean>
@@ -133,7 +133,7 @@
 	</beans:bean>
 
 	<!-- Logout handler terminating local session -->
-	<beans:bean id="logoutHandler" class="com.gcomsoft.mocj.jps.saml.SecurityContextLogoutHandler">
+	<beans:bean id="logoutHandler" class="org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler">
 		<beans:property name="invalidateHttpSession" value="true" />
 		<beans:property name="clearAuthentication" value="true" />
 	</beans:bean>

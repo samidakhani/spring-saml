@@ -17,7 +17,7 @@
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 		<property name="locations">
 			<list>
-				<value>file:/Users/Sami/Desktop/SAMI/properties/saml/operations.properties
+				<value>file:/properties/saml/operations.properties
 				</value>
 			</list>
 		</property>
